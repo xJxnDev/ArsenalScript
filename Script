@@ -1,0 +1,1068 @@
+# -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.DisplayOrder = 1
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.00925354939, 0, 0.0153139476, 0)
+Frame.Size = UDim2.new(0.137999997, 0, 0.759476364, 0)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.00219529495, 0, 0.176978037, 0)
+TextLabel.Size = UDim2.new(0.98853147, 0, 0.0562996268, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "AimBot"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.00691391528, 0, 0.0128369723, 0)
+TextLabel_2.Size = UDim2.new(0.970313072, 0, 0.0515281707, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Softaim(Buggy)"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.107164994, 0, 0.08558698, 0)
+TextButton.Size = UDim2.new(0.791223109, 0, 0.0504184142, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "OFF"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.Position = UDim2.new(0.00412448496, 0, 0.252019584, 0)
+TextButton_2.Size = UDim2.new(0.954884052, 0, 0.0544128865, 0)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "OFF"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0524599701, 0, 0.336132348, 0)
+TextLabel_3.Size = UDim2.new(0.933876216, 0, 0.0959998146, 0)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Inf Jumps(Cannot be turned off)"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.Position = UDim2.new(0.0906619877, 0, 0.455070376, 0)
+TextButton_3.Size = UDim2.new(0.835053742, 0, 0.0493421666, 0)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "OFF"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0342415795, 0, 0.520368457, 0)
+TextLabel_4.Size = UDim2.new(0.964348018, 0, 0.0868235826, 0)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "GunMods(Cannot be turned Off)"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.Position = UDim2.new(0.104325801, 0, 0.612262607, 0)
+TextButton_4.Size = UDim2.new(0.835053742, 0, 0.0493421666, 0)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "OFF"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+TextButton_5.Parent = Frame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.Position = UDim2.new(0.0177883003, 0, 0.786135316, 0)
+TextButton_5.Size = UDim2.new(0.954884052, 0, 0.0544128865, 0)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "OFF"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
+
+TextLabel_5.Parent = Frame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0114685204, 0, 0.711093783, 0)
+TextLabel_5.Size = UDim2.new(0.98853147, 0, 0.0562996268, 0)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "FFA AimBot ( ONLY TURN ON AT FFA!)"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = ScreenGui
+UIAspectRatioConstraint.AspectRatio = 2.118
+
+-- Scripts:
+
+local function YATNX_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local plr = game.Players.LocalPlayer
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.Keyboard then
+			if input.KeyCode == Enum.KeyCode.Insert then
+				if script.Parent.Visible == false then
+					script.Parent.Visible = true
+				else
+					script.Parent.Visible = false
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(YATNX_fake_script)()
+local function WDFO_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	_G.aim = false
+	local UIS = game:GetService("UserInputService")
+	local camera = game.Workspace.CurrentCamera
+	local TS = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(0.25) 
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.aim == false then 
+			_G.aim = true
+			script.Parent.Text = "ON"
+			script.Parent.TextColor3 = Color3.fromRGB(0, 255, 0)
+			function getClosest()
+				local closestDistance = math.huge
+				local closestPlayer = nil
+				for i,v in pairs(game.Players:GetChildren()) do
+					if v ~= game.Players.LocalPlayer and v.Team ~= game.Players.LocalPlayer.Team then
+						local distance = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).magnitude
+						if distance < closestDistance then
+							closestDistance = distance
+							closestPlayer = v
+						end
+					end
+				end
+				return closestPlayer
+			end
+	
+			UIS.InputBegan:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton2 then
+					_G.aim = true
+					while wait() do
+						local Tween = TS:Create(camera, tweenInfo, {CFrame = CFrame.new(camera.CFrame.Position, getClosest().Character.Head.Position)})
+						Tween:Play()
+						if _G.aim == false then Tween:Cancel() return end
+					end
+				end
+			end)
+	
+			UIS.InputEnded:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton2 then
+					_G.aim = false
+				end
+			end)
+		else
+			_G.aim = false
+			script.Parent.Text = "OFF"
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)
+		end
+	end)
+end
+coroutine.wrap(WDFO_fake_script)()
+local function QZHK_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	_G.aimbot = false
+	local camera = game.Workspace.CurrentCamera
+	local localplayer = game:GetService("Players").LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.aimbot == false then
+			_G.aimbot = true
+			script.Parent.TextColor3 = Color3.fromRGB(0,170,0)
+			script.Parent.Text = "On"
+			function closestplayer()
+				local dist = math.huge -- math.huge means a really large number, 1M+.
+				local target = nil --- nil means no value
+				for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+					if v ~= localplayer then
+						if v.Character and v.Character:FindFirstChild("Head") and v.TeamColor ~= localplayer.TeamColor and _G.aimbot and v.Character.Humanoid.Health > 0 then --- creating the checks
+							local magnitude = (v.Character.Head.Position - localplayer.Character.Head.Position).magnitude
+							if magnitude < dist then
+								dist = magnitude
+								target = v
+							end
+	
+						end
+					end
+				end
+				return target
+			end
+	
+		else
+			_G.aimbot = false
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)
+			script.Parent.Text = "Off"
+		end
+	end)
+	
+	local settings = {
+		keybind = Enum.UserInputType.MouseButton2
+	}
+	
+	local UIS = game:GetService("UserInputService")
+	local aiming = false --- this toggle will make it so we lock on to the person when we press our keybind
+	
+	UIS.InputBegan:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then
+			aiming = true
+		end
+	end)
+	
+	UIS.InputEnded:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then ---- when we stop pressing the keybind it would unlock off the player
+			aiming = false
+		end
+	end)
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if aiming then
+			camera.CFrame = CFrame.new(camera.CFrame.Position,closestplayer().Character.Head.Position) -- locks into the HEAD
+		end
+	end)
+end
+coroutine.wrap(QZHK_fake_script)()
+local function SNJO_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); -- drag speed
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(SNJO_fake_script)()
+local function TDGMHP_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	_G.JumpHeight = 50;
+	_G.inf = false;
+	local Player = game:GetService'Players'.LocalPlayer;
+	local UIS = game:GetService'UserInputService';
+	
+	
+	function Action(Object, Function) if Object ~= nil then Function(Object); end end
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.inf == false then
+			_G.inf = true
+			script.Parent.TextColor3 = Color3.fromRGB(0,255,0)
+			script.Parent.Text = "On"
+			UIS.InputBegan:connect(function(UserInput)
+				if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+					Action(Player.Character.Humanoid, function(self)
+						if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+							Action(self.Parent.HumanoidRootPart, function(self)
+								self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+							end)
+						end
+					end)
+				end
+			end)
+			
+		
+			
+		else
+			_G.inf = false
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)
+			script.Parent.Text = "Off"
+	     	end
+		end)
+end
+coroutine.wrap(TDGMHP_fake_script)()
+local function CKKODE_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	_G.JumpHeight = 50;
+	_G.inf = false;
+	local Player = game:GetService'Players'.LocalPlayer;
+	local UIS = game:GetService'UserInputService';
+	
+	
+	function Action(Object, Function) if Object ~= nil then Function(Object); end end
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.inf == false then
+			_G.inf = true
+			script.Parent.TextColor3 = Color3.fromRGB(0,255,0)
+			script.Parent.Text = "On"
+			local Functions = {}
+			for i,v in pairs(getreg()) do
+				if type(v) == "function" then
+					for i2,v2 in pairs(getfenv(v)) do
+						if type(v2) == "function" then
+							Functions[tostring(i2)] = v2
+						end
+					end
+				end
+			end
+	
+			function GetLocalWeapon()
+				return getfenv(Functions.usethatgun).gun
+			end
+	
+			game:GetService("RunService"):BindToRenderStep("gunmodsarecool", 1, function()
+				getfenv(Functions.usethatgun).currentspread = 0 -- NoSpread
+	
+				getfenv(Functions.usethatgun).recoil = 0 -- NoRecoil
+	
+				if GetLocalWeapon() ~= "none" and GetLocalWeapon():FindFirstChild("Ammo") then -- Inf Ammo
+					debug.setupvalue(Functions["updateInventory"], 3, GetLocalWeapon():FindFirstChild("Ammo").Value)
+				end
+	
+				if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Spawned") and game:GetService("UserInputService"):IsMouseButtonPressed(Enum.UserInputType.MouseButton1) then -- RapidFire
+					if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid").Health ~= 0 and game.Players.LocalPlayer.Character:FindFirstChild("Spawned") then
+						pcall(function()
+							Functions.firebullet(true)
+						end)
+					end
+				end
+			end)
+		else
+			_G.inf = false
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)
+			script.Parent.Text = "Off"
+	     	end
+		end)
+end
+coroutine.wrap(CKKODE_fake_script)()
+local function DAHPTUD_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	_G.aimbot = false
+	local camera = game.Workspace.CurrentCamera
+	local localplayer = game:GetService("Players").LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.aimbot == false then
+			_G.aimbot = true
+			script.Parent.TextColor3 = Color3.fromRGB(0,255,0)
+			script.Parent.Text = "On"
+			function closestplayer()
+				local dist = math.huge
+				local target = nil 
+				for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+					if v ~= localplayer then
+						if v.Character and v.Character:FindFirstChild("Head") and _G.aimbot and v.Character.Humanoid.Health > 0 then --- creating the checks
+							local magnitude = (v.Character.Head.Position - localplayer.Character.Head.Position).magnitude
+							if magnitude < dist then
+								dist = magnitude
+								target = v
+							end
+	
+						end
+					end
+				end
+				return target
+			end
+	
+		else
+			_G.aimbot = false
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)
+			script.Parent.Text = "Off"
+		end
+	end)
+	
+	local settings = {
+		keybind = Enum.UserInputType.MouseButton2
+	}
+	
+	local UIS = game:GetService("UserInputService")
+	local aiming = false
+	
+	UIS.InputBegan:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then
+			aiming = true
+		end
+	end)
+	
+	UIS.InputEnded:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then 
+			aiming = false
+		end
+	end)
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if aiming then
+			camera.CFrame = CFrame.new(camera.CFrame.Position,closestplayer().Character.Head.Position)
+			
+		end
+	end)
+end
+coroutine.wrap(DAHPTUD_fake_script)()
+local function ASZMLFI_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local plr = game.Players.LocalPlayer
+	local camera = game.Workspace.CurrentCamera
+	
+	for i, v in pairs(game.Players:GetChildren()) do
+		local TEXT = Drawing.new("Text")
+		TEXT.Visible = false
+		TEXT.Transparency = 1
+		TEXT.Color = Color3.fromRGB(255, 0, 0)
+		TEXT.Text = v.Name
+		TEXT.Size = 15
+		TEXT.Position = Vector2.new(200,200)
+	
+		local TRACER = Drawing.new("Line")
+		TRACER.Visible = false
+		TRACER.From = Vector2.new(0, 0)
+		TRACER.To = Vector2.new(200, 200)
+		TRACER.Color = Color3.fromRGB(255, 0, 0)
+		TRACER.Thickness = 2
+		TRACER.Transparency = 1
+	
+		function ESP()
+			game:GetService("RunService").RenderStepped:Connect(function()
+				if v.Character ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v.Name ~= plr.Name  and v.Character.Humanoid.Health > 0 then 
+					local ScreenPos, OnScreen = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+					if OnScreen then
+						TRACER.From = Vector2.new(camera.ViewportSize.X/2, camera.ViewportSize.Y) -- Gets bottom center of screen for tracers
+						TRACER.To = Vector2.new(ScreenPos.X, ScreenPos.Y)
+						TEXT.Position = Vector2.new(ScreenPos.X- 20, ScreenPos.Y)
+	
+						if v.TeamColor == plr.TeamColor then
+							TRACER.Color = Color3.fromRGB(0, 255, 0)
+							TEXT.Color = Color3.fromRGB(0, 255, 0)
+						else 
+							TRACER.Color = Color3.fromRGB(255, 0, 0)
+							TEXT.Color = Color3.fromRGB(255, 0, 0)
+						end
+	
+						TRACER.Visible = true
+						TEXT.Visible = true
+					else 
+						TRACER.Visible = false
+						TEXT.Visible = false
+					end
+				else 
+					TRACER.Visible = false
+					TEXT.Visible = false
+					if game.Players:FindFirstChild(v.Name) then
+					else
+						Disconnect()
+					end
+				end
+			end)
+		end
+		coroutine.wrap(ESP)()
+	end
+	
+	game.Players.PlayerAdded:Connect(function(newplr) --Parameter gets the new player that has been added
+		local TEXT = Drawing.new("Text")
+		TEXT.Visible = false
+		TEXT.Transparency = 1
+		TEXT.Color = Color3.fromRGB(255, 0, 0)
+		TEXT.Text = newplr.Name
+		TEXT.Size = 15
+		TEXT.Position = Vector2.new(200,200)
+	
+		local TRACER = Drawing.new("Line")
+		TRACER.Visible = false
+		TRACER.From = Vector2.new(0, 0)
+		TRACER.To = Vector2.new(200, 200)
+		TRACER.Color = Color3.fromRGB(255, 0, 0)
+		TRACER.Thickness = 2
+		TRACER.Transparency = 1
+	
+		function ESP()
+			game:GetService("RunService").RenderStepped:Connect(function()
+				if newplr.Character ~= nil and newplr.Character:FindFirstChild("HumanoidRootPart") ~= nil and newplr.Name ~= plr.Name  and newplr.Character.Humanoid.Health > 0 then
+					local ScreenPos, OnScreen = camera:WorldToViewportPoint(newplr.Character.HumanoidRootPart.Position)
+					if OnScreen then
+						TRACER.From = Vector2.new(camera.ViewportSize.X/2, camera.ViewportSize.Y) -- Gets bottom center of screen for tracers
+						TRACER.To = Vector2.new(ScreenPos.X, ScreenPos.Y)
+						TEXT.Position = Vector2.new(ScreenPos.X - 20, ScreenPos.Y)
+	
+						if newplr.TeamColor == plr.TeamColor then
+							TRACER.Color = Color3.fromRGB(0, 255, 0)
+							TEXT.Color = Color3.fromRGB(0, 255, 0)
+						else 
+							TRACER.Color = Color3.fromRGB(255, 0, 0)
+							TEXT.Color = Color3.fromRGB(255, 0, 0)
+						end
+	
+						TRACER.Visible = true
+						TEXT.Visible = true
+					else 
+						TRACER.Visible = false
+						TEXT.Visible = false
+					end
+				else 
+					TRACER.Visible = false
+					TEXT.Visible = false
+					if game.Players:FindFirstChild(newplr.Name) then
+					else
+						Disconnect()
+					end
+				end
+			end)
+		end
+		coroutine.wrap(ESP)()
+	end)
+end
+coroutine.wrap(ASZMLFI_fake_script)()
+local function NTSYEV_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local plr = game.Players.LocalPlayer
+	local camera = game.Workspace.CurrentCamera
+	
+	for i, v in pairs(game.Players:GetChildren()) do
+		local SkeletonTorso = Drawing.new("Line")
+		SkeletonTorso.Visible = false
+		SkeletonTorso.From = Vector2.new(0, 0)
+		SkeletonTorso.To = Vector2.new(200, 200)
+		SkeletonTorso.Color = Color3.fromRGB(255, 0, 0)
+		SkeletonTorso.Thickness = 2
+		SkeletonTorso.Transparency = 1
+	
+		local SkeletonHead = Drawing.new("Line")
+		SkeletonHead.Visible = false
+		SkeletonHead.From = Vector2.new(0, 0)
+		SkeletonHead.To = Vector2.new(200, 200)
+		SkeletonHead.Color = Color3.fromRGB(255, 0, 0)
+		SkeletonHead.Thickness = 2
+		SkeletonHead.Transparency = 1
+	
+		local SkeletonLeftLeg = Drawing.new("Line")
+		SkeletonLeftLeg.Visible = false
+		SkeletonLeftLeg.From = Vector2.new(0, 0)
+		SkeletonLeftLeg.To = Vector2.new(200, 200)
+		SkeletonLeftLeg.Color = Color3.fromRGB(255, 0, 0)
+		SkeletonLeftLeg.Thickness = 2
+		SkeletonLeftLeg.Transparency = 1
+	
+		local SkeletonRightLeg = Drawing.new("Line")
+		SkeletonRightLeg.Visible = false
+		SkeletonRightLeg.From = Vector2.new(0, 0)
+		SkeletonRightLeg.To = Vector2.new(200, 200)
+		SkeletonRightLeg.Color = Color3.fromRGB(255, 0, 0)
+		SkeletonRightLeg.Thickness = 2
+		SkeletonRightLeg.Transparency = 1
+	
+		local SkeletonLeftArm = Drawing.new("Line")
+		SkeletonLeftArm.Visible = false
+		SkeletonLeftArm.From = Vector2.new(0, 0)
+		SkeletonLeftArm.To = Vector2.new(200, 200)
+		SkeletonLeftArm.Color = Color3.fromRGB(255, 0, 0)
+		SkeletonLeftArm.Thickness = 2
+		SkeletonLeftArm.Transparency = 1
+	
+		local SkeletonRightArm = Drawing.new("Line")
+		SkeletonRightArm.Visible = false
+		SkeletonRightArm.From = Vector2.new(0, 0)
+		SkeletonRightArm.To = Vector2.new(200, 200)
+		SkeletonRightArm.Color = Color3.fromRGB(255, 0, 0)
+		SkeletonRightArm.Thickness = 2
+		SkeletonRightArm.Transparency = 1
+	
+		function ESP()
+			game:GetService("RunService").RenderStepped:Connect(function()
+				if v.Character ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v.Name ~= plr.Name  and v.Character.Humanoid.Health > 0 then 
+					local ScreenPos, OnScreen = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+					if OnScreen then
+						local UpperTorso = camera:WorldToViewportPoint(v.Character.UpperTorso.Position)
+						local LowerTorso = camera:WorldToViewportPoint(v.Character.LowerTorso.Position)
+	
+						local LeftLeg = camera:WorldToViewportPoint(v.Character.LeftFoot.Position)
+						local RightLeg = camera:WorldToViewportPoint(v.Character.RightFoot.Position)
+	
+						local LeftArm = camera:WorldToViewportPoint(v.Character.LeftHand.Position)
+						local RightArm = camera:WorldToViewportPoint(v.Character.RightHand.Position)
+	
+						local Head = camera:WorldToViewportPoint(v.Character.Head.Position)
+	
+						SkeletonTorso.From = Vector2.new(UpperTorso.X, UpperTorso.Y)
+						SkeletonTorso.To = Vector2.new(LowerTorso.X, LowerTorso.Y)
+	
+						SkeletonHead.From = Vector2.new(UpperTorso.X, UpperTorso.Y)
+						SkeletonHead.To = Vector2.new(Head.X, Head.Y)
+	
+						SkeletonLeftLeg.From = Vector2.new(LeftLeg.X, LeftLeg.Y)
+						SkeletonLeftLeg.To = Vector2.new(LowerTorso.X, LowerTorso.Y)
+	
+						SkeletonRightLeg.From = Vector2.new(RightLeg.X, RightLeg.Y)
+						SkeletonRightLeg.To = Vector2.new(LowerTorso.X, LowerTorso.Y)
+	
+						SkeletonLeftArm.From = Vector2.new(LeftArm.X, LeftArm.Y)
+						SkeletonLeftArm.To = Vector2.new(UpperTorso.X, UpperTorso.Y)
+	
+						SkeletonRightArm.From = Vector2.new(RightArm.X, RightArm.Y)
+						SkeletonRightArm.To = Vector2.new(UpperTorso.X, UpperTorso.Y)
+	
+						if v.TeamColor == plr.TeamColor then
+							SkeletonTorso.Color = Color3.fromRGB(0, 255, 0)
+							SkeletonHead.Color = Color3.fromRGB(0, 255, 0)
+							SkeletonLeftArm.Color = Color3.fromRGB(0, 255, 0)
+							SkeletonLeftLeg.Color = Color3.fromRGB(0, 255, 0)
+							SkeletonRightArm.Color = Color3.fromRGB(0, 255, 0)
+							SkeletonRightLeg.Color = Color3.fromRGB(0, 255, 0)
+						else 
+							SkeletonTorso.Color = Color3.fromRGB(255, 0, 0)
+							SkeletonHead.Color = Color3.fromRGB(255, 0, 0)
+							SkeletonLeftArm.Color = Color3.fromRGB(255, 0, 0)
+							SkeletonLeftLeg.Color = Color3.fromRGB(255, 0, 0)
+							SkeletonRightArm.Color = Color3.fromRGB(255, 0, 0)
+							SkeletonRightLeg.Color = Color3.fromRGB(255, 0, 0)
+						end
+	
+						SkeletonTorso.Visible = true
+						SkeletonHead.Visible = true
+						SkeletonLeftArm.Visible = true
+						SkeletonLeftLeg.Visible = true
+						SkeletonRightArm.Visible = true
+						SkeletonRightLeg.Visible = true
+					else 
+						SkeletonTorso.Visible = false
+						SkeletonHead.Visible = false
+						SkeletonLeftArm.Visible = false
+						SkeletonLeftLeg.Visible = false
+						SkeletonRightArm.Visible = false
+						SkeletonRightLeg.Visible = false
+					end
+				else 
+					SkeletonTorso.Visible = false
+					SkeletonHead.Visible = false
+					SkeletonLeftArm.Visible = false
+					SkeletonLeftLeg.Visible = false
+					SkeletonRightArm.Visible = false
+					SkeletonRightLeg.Visible = false
+					if game.Players:FindFirstChild(v.Name) then
+					else
+						Disconnect()
+					end
+				end
+			end)
+		end
+		coroutine.wrap(ESP)()
+	end
+	
+	game.Players.PlayerAdded:Connect(function(newplr) --Parameter gets the new player that has been added
+		local SkeletonTorso = Drawing.new("Line")
+		SkeletonTorso.Visible = false
+		SkeletonTorso.From = Vector2.new(0, 0)
+		SkeletonTorso.To = Vector2.new(200, 200)
+		SkeletonTorso.Color = Color3.fromRGB(255, 0, 0)
+		SkeletonTorso.Thickness = 2
+		SkeletonTorso.Transparency = 1
+	
+		local SkeletonHead = Drawing.new("Line")
+		SkeletonHead.Visible = false
+		SkeletonHead.From = Vector2.new(0, 0)
+		SkeletonHead.To = Vector2.new(200, 200)
+		SkeletonHead.Color = Color3.fromRGB(255, 0, 0)
+		SkeletonHead.Thickness = 2
+		SkeletonHead.Transparency = 1
+	
+		local SkeletonLeftLeg = Drawing.new("Line")
+		SkeletonLeftLeg.Visible = false
+		SkeletonLeftLeg.From = Vector2.new(0, 0)
+		SkeletonLeftLeg.To = Vector2.new(200, 200)
+		SkeletonLeftLeg.Color = Color3.fromRGB(255, 0, 0)
+		SkeletonLeftLeg.Thickness = 2
+		SkeletonLeftLeg.Transparency = 1
+	
+		local SkeletonRightLeg = Drawing.new("Line")
+		SkeletonRightLeg.Visible = false
+		SkeletonRightLeg.From = Vector2.new(0, 0)
+		SkeletonRightLeg.To = Vector2.new(200, 200)
+		SkeletonRightLeg.Color = Color3.fromRGB(255, 0, 0)
+		SkeletonRightLeg.Thickness = 2
+		SkeletonRightLeg.Transparency = 1
+	
+		local SkeletonLeftArm = Drawing.new("Line")
+		SkeletonLeftArm.Visible = false
+		SkeletonLeftArm.From = Vector2.new(0, 0)
+		SkeletonLeftArm.To = Vector2.new(200, 200)
+		SkeletonLeftArm.Color = Color3.fromRGB(255, 0, 0)
+		SkeletonLeftArm.Thickness = 2
+		SkeletonLeftArm.Transparency = 1
+	
+		local SkeletonRightArm = Drawing.new("Line")
+		SkeletonRightArm.Visible = false
+		SkeletonRightArm.From = Vector2.new(0, 0)
+		SkeletonRightArm.To = Vector2.new(200, 200)
+		SkeletonRightArm.Color = Color3.fromRGB(255, 0, 0)
+		SkeletonRightArm.Thickness = 2
+		SkeletonRightArm.Transparency = 1
+	
+		function ESP()
+			game:GetService("RunService").RenderStepped:Connect(function()
+				if newplr.Character ~= nil and newplr.Character:FindFirstChild("HumanoidRootPart") ~= nil and newplr.Name ~= plr.Name  and newplr.Character.Humanoid.Health > 0 then
+					local ScreenPos, OnScreen = camera:WorldToViewportPoint(newplr.Character.HumanoidRootPart.Position)
+					if OnScreen then
+						local UpperTorso = camera:WorldToViewportPoint(newplr.Character.UpperTorso.Position)
+						local LowerTorso = camera:WorldToViewportPoint(newplr.Character.LowerTorso.Position)
+	
+						local LeftLeg = camera:WorldToViewportPoint(newplr.Character.LeftFoot.Position)
+						local RightLeg = camera:WorldToViewportPoint(newplr.Character.RightFoot.Position)
+	
+						local LeftArm = camera:WorldToViewportPoint(newplr.Character.LeftHand.Position)
+						local RightArm = camera:WorldToViewportPoint(newplr.Character.RightHand.Position)
+	
+						local Head = camera:WorldToViewportPoint(newplr.Character.Head.Position)
+	
+						SkeletonTorso.From = Vector2.new(UpperTorso.X, UpperTorso.Y)
+						SkeletonTorso.To = Vector2.new(LowerTorso.X, LowerTorso.Y)
+	
+						SkeletonHead.From = Vector2.new(UpperTorso.X, UpperTorso.Y)
+						SkeletonHead.To = Vector2.new(Head.X, Head.Y)
+	
+						SkeletonLeftLeg.From = Vector2.new(LeftLeg.X, LeftLeg.Y)
+						SkeletonLeftLeg.To = Vector2.new(LowerTorso.X, LowerTorso.Y)
+	
+						SkeletonRightLeg.From = Vector2.new(RightLeg.X, RightLeg.Y)
+						SkeletonRightLeg.To = Vector2.new(LowerTorso.X, LowerTorso.Y)
+	
+						SkeletonLeftArm.From = Vector2.new(LeftArm.X, LeftArm.Y)
+						SkeletonLeftArm.To = Vector2.new(UpperTorso.X, UpperTorso.Y)
+	
+						SkeletonRightArm.From = Vector2.new(RightArm.X, RightArm.Y)
+						SkeletonRightArm.To = Vector2.new(UpperTorso.X, UpperTorso.Y)
+	
+						if newplr.TeamColor == plr.TeamColor then
+							SkeletonTorso.Color = Color3.fromRGB(0, 255, 0)
+							SkeletonHead.Color = Color3.fromRGB(0, 255, 0)
+							SkeletonLeftArm.Color = Color3.fromRGB(0, 255, 0)
+							SkeletonLeftLeg.Color = Color3.fromRGB(0, 255, 0)
+							SkeletonRightArm.Color = Color3.fromRGB(0, 255, 0)
+							SkeletonRightLeg.Color = Color3.fromRGB(0, 255, 0)
+						else 
+							SkeletonTorso.Color = Color3.fromRGB(255, 0, 0)
+							SkeletonHead.Color = Color3.fromRGB(255, 0, 0)
+							SkeletonLeftArm.Color = Color3.fromRGB(255, 0, 0)
+							SkeletonLeftLeg.Color = Color3.fromRGB(255, 0, 0)
+							SkeletonRightArm.Color = Color3.fromRGB(255, 0, 0)
+							SkeletonRightLeg.Color = Color3.fromRGB(255, 0, 0)
+						end
+	
+						SkeletonTorso.Visible = true
+						SkeletonHead.Visible = true
+						SkeletonLeftArm.Visible = true
+						SkeletonLeftLeg.Visible = true
+						SkeletonRightArm.Visible = true
+						SkeletonRightLeg.Visible = true
+					else 
+						SkeletonTorso.Visible = false
+						SkeletonHead.Visible = false
+						SkeletonLeftArm.Visible = false
+						SkeletonLeftLeg.Visible = false
+						SkeletonRightArm.Visible = false
+						SkeletonRightLeg.Visible = false
+					end
+				else 
+					SkeletonTorso.Visible = false
+					SkeletonHead.Visible = false
+					SkeletonLeftArm.Visible = false
+					SkeletonLeftLeg.Visible = false
+					SkeletonRightArm.Visible = false
+					SkeletonRightLeg.Visible = false
+					if game.Players:FindFirstChild(newplr.Name) then
+					else
+						Disconnect()
+					end
+				end
+			end)
+		end
+		coroutine.wrap(ESP)()
+	end)
+end
+coroutine.wrap(NTSYEV_fake_script)()
+local function HECQLCO_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local plr = game.Players.LocalPlayer
+	local camera = game.Workspace.CurrentCamera
+	
+	for i, v in pairs(game.Players:GetChildren()) do
+		local Top = Drawing.new("Line")
+		Top.Visible = false
+		Top.From = Vector2.new(0, 0)
+		Top.To = Vector2.new(200, 200)
+		Top.Color = Color3.fromRGB(255, 0, 0)
+		Top.Thickness = 2
+		Top.Transparency = 1
+	
+		local Bottom = Drawing.new("Line")
+		Bottom.Visible = false
+		Bottom.From = Vector2.new(0, 0)
+		Bottom.To = Vector2.new(200, 200)
+		Bottom.Color = Color3.fromRGB(255, 0, 0)
+		Bottom.Thickness = 2
+		Bottom.Transparency = 1
+	
+		local Left = Drawing.new("Line")
+		Left.Visible = false
+		Left.From = Vector2.new(0, 0)
+		Left.To = Vector2.new(200, 200)
+		Left.Color = Color3.fromRGB(255, 0, 0)
+		Left.Thickness = 2
+		Left.Transparency = 1
+	
+		local Right = Drawing.new("Line")
+		Right.Visible = false
+		Right.From = Vector2.new(0, 0)
+		Right.To = Vector2.new(200, 200)
+		Right.Color = Color3.fromRGB(255, 0, 0)
+		Right.Thickness = 2
+		Right.Transparency = 1
+	
+		function ESP()
+			local connection
+			connection = game:GetService("RunService").RenderStepped:Connect(function()
+				if v.Character ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v.Name ~= plr.Name  and v.Character.Humanoid.Health > 0 then 
+					local ScreenPos, OnScreen = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+					if OnScreen then
+						local Scale = v.Character.Head.Size.Y/2
+						local Size = Vector3.new(2, 3, 0) * (Scale * 2)
+						local humpos = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+						local TL = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, Size.Y, 0)).p)
+						local TR = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, Size.Y, 0)).p)
+						local BL = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, -Size.Y, 0)).p)
+						local BR = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, -Size.Y, 0)).p)
+	
+						Top.From = Vector2.new(TL.X, TL.Y)
+						Top.To = Vector2.new(TR.X, TR.Y)
+	
+						Left.From = Vector2.new(TL.X, TL.Y)
+						Left.To = Vector2.new(BL.X, BL.Y)
+	
+						Right.From = Vector2.new(TR.X, TR.Y)
+						Right.To = Vector2.new(BR.X, BR.Y)
+	
+						Bottom.From = Vector2.new(BL.X, BL.Y)
+						Bottom.To = Vector2.new(BR.X, BR.Y)
+	
+						if v.TeamColor == plr.TeamColor then
+							Top.Color = Color3.fromRGB(0, 255, 0)
+							Left.Color = Color3.fromRGB(0, 255, 0)
+							Bottom.Color = Color3.fromRGB(0, 255, 0)
+							Right.Color = Color3.fromRGB(0, 255, 0)
+						else 
+							Top.Color = Color3.fromRGB(255, 0, 0)
+							Left.Color = Color3.fromRGB(255, 0, 0)
+							Bottom.Color = Color3.fromRGB(255, 0, 0)
+							Right.Color = Color3.fromRGB(255, 0, 0)
+						end
+	
+						Top.Visible = true
+						Left.Visible = true
+						Bottom.Visible = true
+						Right.Visible = true
+					else 
+						Top.Visible = false
+						Left.Visible = false
+						Bottom.Visible = false
+						Right.Visible = false
+					end
+				else 
+					Top.Visible = false
+					Left.Visible = false
+					Bottom.Visible = false
+					Right.Visible = false
+					if game.Players:FindFirstChild(v.Name) == nil then
+						connection:Disconnect()
+					end
+				end
+			end)
+		end
+		coroutine.wrap(ESP)()
+	end
+	
+	game.Players.PlayerAdded:Connect(function(newplr) --Parameter gets the new player that has been added
+		local Top = Drawing.new("Line")
+		Top.Visible = false
+		Top.From = Vector2.new(0, 0)
+		Top.To = Vector2.new(200, 200)
+		Top.Color = Color3.fromRGB(255, 0, 0)
+		Top.Thickness = 2
+		Top.Transparency = 1
+	
+		local Bottom = Drawing.new("Line")
+		Bottom.Visible = false
+		Bottom.From = Vector2.new(0, 0)
+		Bottom.To = Vector2.new(200, 200)
+		Bottom.Color = Color3.fromRGB(255, 0, 0)
+		Bottom.Thickness = 2
+		Bottom.Transparency = 1
+	
+		local Left = Drawing.new("Line")
+		Left.Visible = false
+		Left.From = Vector2.new(0, 0)
+		Left.To = Vector2.new(200, 200)
+		Left.Color = Color3.fromRGB(255, 0, 0)
+		Left.Thickness = 2
+		Left.Transparency = 1
+	
+		local Right = Drawing.new("Line")
+		Right.Visible = false
+		Right.From = Vector2.new(0, 0)
+		Right.To = Vector2.new(200, 200)
+		Right.Color = Color3.fromRGB(255, 0, 0)
+		Right.Thickness = 2
+		Right.Transparency = 1
+	
+		function ESP()
+			local connection
+			connection = game:GetService("RunService").RenderStepped:Connect(function()
+				if newplr.Character ~= nil and newplr.Character:FindFirstChild("HumanoidRootPart") ~= nil and newplr.Name ~= plr.Name  and newplr.Character.Humanoid.Health > 0 then
+					local ScreenPos, OnScreen = camera:WorldToViewportPoint(newplr.Character.HumanoidRootPart.Position)
+					if OnScreen then
+						local Scale = newplr.Character.Head.Size.Y/2
+						local Size = Vector3.new(2, 3, 0) * (Scale * 2)
+						local humpos = camera:WorldToViewportPoint(newplr.Character.HumanoidRootPart.Position)
+						local TL = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, Size.Y, 0)).p)
+						local TR = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, Size.Y, 0)).p)
+						local BL = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, -Size.Y, 0)).p)
+						local BR = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, -Size.Y, 0)).p)
+	
+						Top.From = Vector2.new(TL.X, TL.Y)
+						Top.To = Vector2.new(TR.X, TR.Y)
+	
+						Left.From = Vector2.new(TL.X, TL.Y)
+						Left.To = Vector2.new(BL.X, BL.Y)
+	
+						Right.From = Vector2.new(TR.X, TR.Y)
+						Right.To = Vector2.new(BR.X, BR.Y)
+	
+						Bottom.From = Vector2.new(BL.X, BL.Y)
+						Bottom.To = Vector2.new(BR.X, BR.Y)
+	
+						if newplr.TeamColor == plr.TeamColor then
+							Top.Color = Color3.fromRGB(0, 255, 0)
+							Left.Color = Color3.fromRGB(0, 255, 0)
+							Bottom.Color = Color3.fromRGB(0, 255, 0)
+							Right.Color = Color3.fromRGB(0, 255, 0)
+						else 
+							Top.Color = Color3.fromRGB(255, 0, 0)
+							Left.Color = Color3.fromRGB(255, 0, 0)
+							Bottom.Color = Color3.fromRGB(255, 0, 0)
+							Right.Color = Color3.fromRGB(255, 0, 0)
+						end
+	
+						Top.Visible = true
+						Left.Visible = true
+						Bottom.Visible = true
+						Right.Visible = true
+					else 
+						Top.Visible = false
+						Left.Visible = false
+						Bottom.Visible = false
+						Right.Visible = false
+					end
+				else 
+					Top.Visible = false
+					Left.Visible = false
+					Bottom.Visible = false
+					Right.Visible = false
+					if game.Players:FindFirstChild(newplr.Name) == nil then
+						connection:Disconnect()
+					end
+				end
+			end)
+		end
+		coroutine.wrap(ESP)()
+	end)
+end
+coroutine.wrap(HECQLCO_fake_script)()
